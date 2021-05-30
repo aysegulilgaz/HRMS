@@ -14,8 +14,8 @@ public class JobPosition {
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "job_position_id")
-	private int jobPositionId;
+	@Column(name = "id")
+	private int id;
 
 	@Column(name = "job_position_name") 
 	private String jobPositionName;
@@ -28,19 +28,19 @@ public class JobPosition {
 		
 	}
 
-	public JobPosition(int jobPositionId, String jobPositionName, String jobPositionDetails) {
+	public JobPosition(int id, String jobPositionName, String jobPositionDetails) {
 		super();
-		this.jobPositionId = jobPositionId;
+		this.id = id;
 		this.jobPositionName = jobPositionName;
 		this.jobPositionDetails = jobPositionDetails;
 	}
 
 	public int getJobPositionId() {
-		return jobPositionId;
+		return id;
 	}
 
-	public void setJobPositionId(int jobPositionId) {
-		this.jobPositionId = jobPositionId;
+	public void setJobPositionId(int id) {
+		this.id = id;
 	}
 
 	public String getJobPositionName() {
